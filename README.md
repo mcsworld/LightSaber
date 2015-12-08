@@ -6,3 +6,4 @@
 5. `$ /etc/init.d/ledserver start`
 6. `$ opkg install /root/openssh-sftp-server_6.8p1-1_ramips_24kec.ipk`
 
+trigger light saber by `$ echo 6 | nc [ip address]`
