@@ -1,0 +1,17 @@
+#!/bin/sh /etc/rc.common
+
+START=100
+STOP=100
+
+start() {
+    python /root/server.py &
+}
+
+stop() {
+    kill -9 `ps | grep "server.py" | grep -v "grep" | awk '{print $1}'`
+}
+
+restart() {
+    stop
+    start
+}
